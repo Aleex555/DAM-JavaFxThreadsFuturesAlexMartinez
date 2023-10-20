@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controller1">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #EEEEEE;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controller1">
    <children>
       <Text layoutX="235.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exemple Completable Future" textAlignment="RIGHT" wrappingWidth="560.13671875" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="4.0">
          <font>
@@ -24,7 +24,53 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <ImageView fx:id="img" fitHeight="150.0" fitWidth="200.0" layoutX="412.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="loading" alignment="CENTER" contentDisplay="CENTER" layoutX="459.0" layoutY="292.0" prefHeight="17.0" prefWidth="106.0" text="Loading" textAlignment="CENTER" />
+      <ImageView fx:id="img0" fitHeight="55.0" fitWidth="61.0" layoutX="53.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="loading" alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="343.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <ImageView fx:id="img1" fitHeight="55.0" fitWidth="61.0" layoutX="144.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="loading1" alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="343.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading2" alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="343.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading3" alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="343.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading4" alignment="CENTER" contentDisplay="CENTER" layoutX="407.0" layoutY="345.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading5" alignment="CENTER" contentDisplay="CENTER" layoutX="496.0" layoutY="345.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading6" alignment="CENTER" contentDisplay="CENTER" layoutX="584.0" layoutY="345.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading7" alignment="CENTER" contentDisplay="CENTER" layoutX="672.0" layoutY="343.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <ImageView fx:id="img2" fitHeight="55.0" fitWidth="61.0" layoutX="235.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img3" fitHeight="55.0" fitWidth="61.0" layoutX="321.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img4" fitHeight="55.0" fitWidth="61.0" layoutX="403.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img5" fitHeight="55.0" fitWidth="61.0" layoutX="492.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img6" fitHeight="55.0" fitWidth="61.0" layoutX="580.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img7" fitHeight="55.0" fitWidth="61.0" layoutX="668.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img8" fitHeight="55.0" fitWidth="61.0" layoutX="53.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="loading8" alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="407.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <ImageView fx:id="img9" fitHeight="55.0" fitWidth="61.0" layoutX="144.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="loading9" alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="407.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading10" alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="407.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading11" alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="407.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading12" alignment="CENTER" contentDisplay="CENTER" layoutX="407.0" layoutY="409.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading13" alignment="CENTER" contentDisplay="CENTER" layoutX="496.0" layoutY="409.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading14" alignment="CENTER" contentDisplay="CENTER" layoutX="584.0" layoutY="409.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading15" alignment="CENTER" contentDisplay="CENTER" layoutX="672.0" layoutY="407.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <ImageView fx:id="img10" fitHeight="55.0" fitWidth="61.0" layoutX="235.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img11" fitHeight="55.0" fitWidth="61.0" layoutX="321.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img12" fitHeight="55.0" fitWidth="61.0" layoutX="403.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img13" fitHeight="55.0" fitWidth="61.0" layoutX="492.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img14" fitHeight="55.0" fitWidth="61.0" layoutX="580.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img15" fitHeight="55.0" fitWidth="61.0" layoutX="668.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img16" fitHeight="55.0" fitWidth="61.0" layoutX="53.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="loading16" alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="471.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <ImageView fx:id="img17" fitHeight="55.0" fitWidth="61.0" layoutX="144.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="loading17" alignment="CENTER" contentDisplay="CENTER" layoutX="148.0" layoutY="471.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading18" alignment="CENTER" contentDisplay="CENTER" layoutX="239.0" layoutY="471.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading19" alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="471.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading20" alignment="CENTER" contentDisplay="CENTER" layoutX="407.0" layoutY="473.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading21" alignment="CENTER" contentDisplay="CENTER" layoutX="496.0" layoutY="473.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading22" alignment="CENTER" contentDisplay="CENTER" layoutX="584.0" layoutY="473.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <Label fx:id="loading23" alignment="CENTER" contentDisplay="CENTER" layoutX="672.0" layoutY="471.0" prefHeight="17.0" prefWidth="52.0" text="Loading" textAlignment="CENTER" />
+      <ImageView fx:id="img18" fitHeight="55.0" fitWidth="61.0" layoutX="235.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img19" fitHeight="55.0" fitWidth="61.0" layoutX="321.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img20" fitHeight="55.0" fitWidth="61.0" layoutX="403.0" layoutY="454.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img21" fitHeight="55.0" fitWidth="61.0" layoutX="492.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img22" fitHeight="55.0" fitWidth="61.0" layoutX="580.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="img23" fitHeight="55.0" fitWidth="61.0" layoutX="668.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

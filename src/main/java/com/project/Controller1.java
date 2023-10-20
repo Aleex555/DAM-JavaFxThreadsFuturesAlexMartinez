@@ -17,11 +17,10 @@ public class Controller1 implements initialize {
     @FXML
     private Button button0, button1;
     @FXML
-    private ImageView img;
-    @FXML
     private AnchorPane container;
     @FXML
     private Label loading;
+    
 
     @FXML
     public void initialize() {
@@ -35,13 +34,32 @@ public class Controller1 implements initialize {
 
     @FXML
     private void loadImage() {
+        ImageView[] imgArray = new ImageView[24];
+        for (int i = 1; i <= 24; i++) {
+        imgArray[i - 1] = new ImageView();
+        imgArray[i - 1].setId("img" + i);
+        imgArray[i - 1].setImage(null);
+        }
+        Label[] labels = new Label[24];
+        for (int i = 1; i <= 24; i++) {
+        labels[i - 1] = new Label();
+        labels[i - 1].setId("Loading" + i);
+        labels[i-1].setVisible(true);
+        }
         System.out.println("Loading image...");
         loading.setVisible(true);
-        img.setImage(null);
+        for(int i = 1; i<=24; i++){
+        imgArray[i - 1].setImage(null);
+        }
         loadImageBackground((image) -> {
-            System.out.println("Image loaded");
-            img.setImage(image);
-            loading.setVisible(false);
+        System.out.println("Image loaded");
+        for(int i = 1; i<=24; i++){
+            imgArray[i - 1].setImage(image);
+        }
+
+        for (int i = 1; i <= 24; i++) {
+        labels[i-1].setVisible(false);
+        }
         });
     }
 

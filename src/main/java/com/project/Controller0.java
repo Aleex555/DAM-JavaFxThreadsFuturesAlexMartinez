@@ -37,7 +37,7 @@ public class Controller0 {
     private int progress0 = 0, progress1 = 0, progress2 = 0; // Variables para el progreso
 
     @FXML
-    private void handleToggleButtonAction(ActionEvent event) {
+    private void runTask(ActionEvent event) {
         Button clickedButton = (Button) event.getSource(); // Obtén el botón que se ha pulsado
 
         if (clickedButton == button1) {
@@ -66,12 +66,12 @@ public class Controller0 {
             }
         } else if (clickedButton == button3) {
             if (isRunningTask2) {
-                // Pausar la tarea asociada al botón 1
+                // Pausar la tarea asociada al botón 3
                 task2.cancel(true);
                 isRunningTask2 = false;
                 button3.setText("Activar");
             } else {
-                // Iniciar la tarea asociada al botón 1 en segundo plano
+                // Iniciar la tarea asociada al botón 3 en segundo plano
                 task2 = backgroundTask(2, progress2);
                 isRunningTask2 = true;
                 button3.setText("Pausar");
@@ -120,7 +120,7 @@ public class Controller0 {
                         }
                         if (progress0 == 100) {
                             progress0 = 0;
-                            button1.setText("Activar");
+                            button1.setText("Empezar");
                         }
                         if (progress1 == 100) {
                             progress1 = 0;
