@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 public class Controller0 {
 
@@ -28,6 +29,8 @@ public class Controller0 {
     @FXML
     private ProgressBar pb2;
 
+    private Stage stage;
+
     private ExecutorService executor = Executors.newFixedThreadPool(3); // Creamos un pool de tres hilos
 
     private boolean isRunningTask0 = false;
@@ -35,6 +38,11 @@ public class Controller0 {
     private boolean isRunningTask2 = false;
     private Future<?> task0, task1, task2;
     private int progress0 = 0, progress1 = 0, progress2 = 0; // Variables para el progreso
+
+    public void setStage(Stage stage) {
+        this.stage = stage;
+        stage.setOnCloseRequest(event -> stopExecutor());
+    }
 
     @FXML
     private void runTask(ActionEvent event) {
@@ -119,16 +127,19 @@ public class Controller0 {
                             pb2.setProgress(progressValue);
                         }
                         if (progress0 == 100) {
+                            stopExecutor();
                             progress0 = 0;
                             button1.setText("Empezar");
                         }
                         if (progress1 == 100) {
+                            stopExecutor();
                             progress1 = 0;
-                            button11.setText("Activar");
+                            button11.setText("Empezar");
                         }
                         if (progress2 == 100) {
+                            stopExecutor();
                             progress2 = 0;
-                            button3.setText("Activar");
+                            button3.setText("Empezar");
                         }
                     });
 
@@ -150,9 +161,14 @@ public class Controller0 {
         });
     }
 
-    // Esta función la llamarías cuando quieras detener el executor (por ejemplo, al
-    // cerrar tu aplicación)
     public void stopExecutor() {
-        executor.shutdown();
+        try {
+            executor.shutdownNow(); // Detiene inmediatamente todas las tareas en ejecución
+        } finally {
+            // Forzar la terminación de la aplicación
+            Platform.runLater(() -> {
+                System.exit(0);
+            });
+        }
     }
 }
